@@ -1,0 +1,195 @@
+ /* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+    align-items: center;
+    background: hsl(0, 0%, 100%);
+
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-bottom: 20px;
+    color: hsl(224, 30%, 27%);
+  }
+  .your-result{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: hsl(241, 100%, 89%);
+  }
+  .comment{
+    margin-top: -30px;
+  }
+span{
+    height: 20px;
+    width: 80px;
+    margin-left: -80px;
+    margin-top: 10px;
+    color: hsl(224, 30%, 27%);
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+h2{
+    text-align: center;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(185, 41%, 84%);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+  .container{
+    height: 450px;
+    width: 700px;
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    /* justify-content: space-between; */
+    
+  }
+  .result{
+    height: 450px;
+    width: 50%;
+    border-radius: 15px;
+    background: hsla(256, 72%, 46%, 1);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    width: 50%;
+    background: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .review{
+    margin-left: 30px;
+  }
+  .continue{
+    margin-left: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+    background: hsla(256, 72%, 46%, 1);
+    border: transparent;
+
+  }
+
+  button{
+    height: 45px;
+    width: 290px;
+    border-radius: 10px;
+    /* background: cyan; */
+    border: transparent;
+    text-align: left;
+    font-size: 17px;
+    font-family: "Hanken Grotesk", sans-serif;
+    /* margin-left: 30px; */
+  }
+  svg{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Buttons styling */
+  .reaction{
+    background: hsl(0, 43%, 95%);
+    color:hsl(0, 100%, 67%);
+  }
+  .memory{
+    background:hsl(39, 77%, 88%);
+    color:hsl(39, 100%, 56%);
+  }
+  .verbal{
+    background: hsl(221, 100%, 96%);
+    color:hsl(166, 100%, 37%);
+  }
+  .visual{
+    background: hsl(229, 44%, 95%);
+    color: hsl(234, 85%, 45%);
+  }
+
+  .circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 70px;
+    background-color: hsla(256, 72%, 46%, 1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-top: 60px;
+
+  }
+  small{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Hanken Grotesk", sans-serif;
+    color:hsl(241, 84%, 83%) ;
+  }
+p{
+    /* height: 200px; */
+    width: 230px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(241, 100%, 89%);
+    margin-left: 60px;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:675px) and (min-width:375px) {
+   *{
+    padding: 0;
+    margin: 0;
+   }
+   body{
+    display: grid;
+    justify-content: center;
+    flex-direction: grid;
+    /* height: 95vh; */
+    align-items: center;
+    background: hsl(0, 36%, 15%);
+   }
+    .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+}
